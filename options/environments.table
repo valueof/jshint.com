@@ -1,3 +1,19 @@
+globals
+
+This option defines custom globals to not consider while linting.  This can be
+very useful for defining other environments.
+
+    globals: {
+        "angular": false,       // angular
+        "_": false,             // underscore.js
+        "module": false         // Gruntfile
+    }
+
+Note that you turn the error checking off for these variables, as opposed to
+turning on the predefined environments below.
+
+--
+
 browser
 
 This option defines globals exposed by modern browsers: all the way from good
